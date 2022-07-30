@@ -9,4 +9,4 @@ edition = "2018"
 
 [[bin]]
 name = "app_rs"
-path = "main.rs"
+path = "src/main.rs"
