@@ -8,4 +8,9 @@ fn main() {
     let min:f64 = std::f64::MIN;
     println!("max f64 - {}", max);
     println!("min f64 - {}", min);
+    decorate_printing();
+}
+
+fn decorate_printing() {
+    println!("Bye Rust!");
 }
