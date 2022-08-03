@@ -9,8 +9,17 @@ fn main() {
     println!("max f64 - {}", max);
     println!("min f64 - {}", min);
     decorate_printing();
+    print_menu();
 }
+
+const HOME_SCREEN_CODE: u8 = 1;
+const EXIT_CODE: u8 = 0;
 
 fn decorate_printing() {
     println!("Bye Rust!");
+}
+
+fn print_menu() {
+    println!("Для возврата на главную страницу введите: {}", HOME_SCREEN_CODE);
+    println!("Для выхода из программы введите: {}", EXIT_CODE);
 }
