@@ -1,5 +1,11 @@
+use std::io;
+
 fn main() {
     print_main_menu_screen();
+    let mut command = String::new();
+    io::stdin().read_line(&mut command).expect("Failed to read line");
+    let command: u8 = command.trim().parse().expect("Введите число");
+    println!("Введено: {}", command);
     print_training_set_screen();
     print_config_screen();
 }
@@ -16,9 +22,7 @@ fn print_main_menu_screen() {
 }
 
 fn print_training_set_screen() {
-    println!("[ Экран работы с обучающей выборкой ]");
-}
+    println!("[ Экран работы с обучающей выборкой ]"); 
+} 
 
-fn print_config_screen() {
-    println!("[ Экран настроек ]");
-}
+fn print_config_screen() { println!("[ Экран настроек ]"); }
